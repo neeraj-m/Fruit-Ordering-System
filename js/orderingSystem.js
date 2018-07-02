@@ -25,8 +25,15 @@ function addToOrder(type, quantity) {
     let item = findFruitByKey("type", type);
 
     if (item != null) {
-        currentOrder[item.id] += quantity;
-        console.log("Added " + quantity + " " + item.type + "\'s to this order.")
+        if (quantity > 0) {
+            currentOrder[item.id] += quantity;
+            console.log("Added " + quantity + " " + item.type + "\'s to this order.")
+        } else {
+            console.log("Invalid quantity entered. Please try again.")
+        }
+    } else {
+        console.log(type + " is not a valid fruit type string.")
+        console.log("Type showFruitTypes() in the console to get all valid fruit types")
     }
 }
 
@@ -48,9 +55,6 @@ function printCurrentOrder() {
         }
     }
 }
-
-
-
 
 // function help() {
 //     console.log('Help Instructions:')
