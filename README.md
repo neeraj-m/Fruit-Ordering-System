@@ -34,9 +34,8 @@ Available fruits are:
 ### Left TODO:
 - [x] removeFromOrder() - including check for negative values
 - [x] saveAndPrintOrderList()
-- [ ] Code commenting
-- [ ] Example usage on index.html
-- [ ] A little styling (bootstrap?)
+- [x] Code commenting
+- [x] Example usage on index.html
 
 
 

@@ -10,7 +10,7 @@
   </head>
 
   <body onload="init();">
-    <h1>Fruit Ordering System</h1>
+    <h1>Fruit Ordering System</h1> by neeraj-m
 
     <h2>Ordering Instructions:</h2>
     <p>Type one of the following in the console to interact with the ordering system:</p>
@@ -34,6 +34,21 @@
 
     <p><b>saveAndPrintOrderList()</b> - saves the current order, and then prints the order list for every order added.</p>
 
+    <h3>Example Console Usage:</h3>
+    <pre><code>addToOrder("RedApple", 7);
+addToOrder("Banana", 3);
+addToOrder("Melon", 1);
+removeFromOrder("RedApple", 1);
+
+newOrder();
+
+addToOrder("GreenApple", 3);
+addToOrder("Banana", 1);
+removeFromOrder("GreenApple", 1);
+addToOrder("RedApple", 1);
+
+saveAndPrintOrderList();
+    </code></pre>
 
     <script src="js/orderingSystem.js"></script>
     <script src="js/order.js"></script>
