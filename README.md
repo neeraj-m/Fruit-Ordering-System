@@ -1,5 +1,11 @@
 # Fruit-Ordering-System
 
+## Instructions
+1. Clone the project.
+1. Open index.html in Chrome (preferably).
+1. Open the console.
+1. Add to your order lists!
+
 ## Task
 Implement a javascript console order system for fruits.
 
@@ -29,20 +35,4 @@ Available fruits are:
 - [x] For each ordered fruit, one line in the console with the name of the fruit and the quantity I have ordered.
 - [x] Not ordered fruits are not in the *order list*.
 - [x] Only one line per fruit – not one line per order!
-
-
-### Left TODO:
-- [x] removeFromOrder() - including check for negative values
-- [x] saveAndPrintOrderList()
-- [x] Code commenting
-- [x] Example usage on index.html
-
-
-
-
-
-
-
-
-
 
