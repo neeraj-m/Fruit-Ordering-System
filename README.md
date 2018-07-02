@@ -19,9 +19,9 @@ Available fruits are:
 
 
 ## As a user...
-- [ ] I can order a specific fruit and tell the system how many pieces I want.
+- [x] I can order a specific fruit and tell the system how many pieces I want.
 
-- [ ] I can add as many orders as I want.
+- [x] I can add as many orders as I want.
 
 - [ ] I can remove one or more pieces of a single fruit from the order list.
 
