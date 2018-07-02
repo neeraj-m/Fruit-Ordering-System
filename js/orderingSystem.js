@@ -10,6 +10,11 @@ let currentOrderNumber = 0;
 let currentOrder;
 let orders = [];
 
+function init() {
+    // TODO: print program instructions to the console
+    newOrder();
+}
+
 // Return fruit by whichever key
 // i.e. key = "id", key = "type", or key = "name"
 // and value = "Banana", etc
@@ -59,7 +64,6 @@ function removeFromOrder(type, quantity) {
     }
 }
 
-
 function newOrder() {
     if (currentOrderNumber != 0) {
         orders.push(currentOrder);
@@ -70,12 +74,24 @@ function newOrder() {
 }
 
 function printCurrentOrder() {
-    console.log("-- CURRENT ORDER #" + currentOrderNumber + " --");
+    console.log("-- ORDER #" + currentOrderNumber + " --");
     for (var i = 1; i<=4; i++) {
         if (currentOrder[i] > 0) {
             let item = findFruitByKey("id", i);
             console.log(currentOrder[i] + " " + item.type + '(s)');
         }
+    }
+}
+
+function saveAndPrintOrderList() {
+    orders.push(currentOrder);
+
+    // Reset current order numbers
+    currentOrderNumber = 1;
+    for (var i=0; i<orders.length; i++) {
+        currentOrder = orders[i];
+        printCurrentOrder();
+        currentOrderNumber++;
     }
 }
 
